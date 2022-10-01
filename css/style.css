@@ -17,9 +17,10 @@
   --footer-adress-text-color: rgba(255, 255, 255, 0.6);
 }
 
-html {
-  font-size: var(--main-font-size);
+body {
   font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  color: var(--main-text-color);
 }
 
 .hidden {
@@ -35,7 +36,6 @@ html {
 .logo {
   font-family: var(--logo-font);
   font-size: var(--logo-font-size);
-  line-height: var(--logo-line-size);
   color: var(--color-black);
   line-height: 1.19;
   font-weight: 700;
@@ -58,7 +58,7 @@ html {
 }
 
 .user-nav-link {
-  color: var(--main-text-color);
+  color: inherit;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -67,6 +67,9 @@ html {
 
 .header-contacts-link {
   color: var(--secondary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
   text-decoration: none;
 }
 .header-contacts-link:hover,
@@ -92,12 +95,13 @@ html {
 
 .hero-button {
   background-color: var(--accent-color);
+  font-family: inherit;
   color: var(--color-white);
   font-size: var(--secondary-font-size);
   font-weight: 700;
-  line-height: 2.37;
+  line-height: 1.88;
   letter-spacing: 0.06em;
-  border: 0px;
+  border-color: transparent;
   cursor: pointer;
 }
 
@@ -106,22 +110,21 @@ html {
   background-color: var(--accent-button-color);
 }
 
-.features-heading {
-  color: var(--main-text-color);
+.feature-heading {
+  font-size: inherit;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 
-.features-discription {
+.feature-discription {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 .engagement-heading {
-  color: var(--main-text-color);
   font-size: var(--heading-font-size);
   font-weight: 700;
   line-height: 1.17;
@@ -133,7 +136,6 @@ html {
 }
 
 .team-heading {
-  color: var(--main-text-color);
   font-size: var(--heading-font-size);
   font-weight: 700;
   line-height: 1.17;
@@ -146,7 +148,6 @@ html {
 }
 
 .teammate-name {
-  color: var(--main-text-color);
   font-size: var(--secondary-font-size);
   font-weight: 500;
   line-height: 1.19;
@@ -155,8 +156,7 @@ html {
 
 .teammate-profession {
   color: var(--secondary-text-color);
-  background-color: var(--background-color-light);
-  font-size: 16px;
+  font-size: var(--secondary-font-size);
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
@@ -164,12 +164,13 @@ html {
 /* Portfolio */
 
 .filter-button {
-  font-family: var(--main-font);
-  font-size: 16px;
-  line-height: 1.62;
+  font-family: inherit;
+  font-size: var(--secondary-font-size);
+  font-weight: 500;
+  line-height: 1.63;
   letter-spacing: 0.03em;
   cursor: pointer;
-  border: 0px;
+  border-color: transparent;
 }
 
 .filter-button:hover,
@@ -192,8 +193,9 @@ html {
 
 .project-type {
   color: var(--secondary-text-color);
-  font-size: var(--secondary-text-color);
+  font-size: var(--secondary-font-size);
   line-height: 1.88;
+  letter-spacing: 0.03em;
 }
 
 .ftr {
@@ -210,18 +212,11 @@ html {
   text-decoration: none;
 }
 
-.footer-contact-list {
-  font-family: var(--main-font);
-  list-style: none;
-}
-
 .footer-adress {
   font-style: normal;
 }
 
 .footer-contact-link {
-  font-family: var(--main-font);
-  font-size: var(--main-font-size);
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--footer-adress-text-color);
@@ -234,4 +229,8 @@ html {
 
 .footer-contact-link-mod {
   color: var(--color-white);
+}
+
+.current {
+  color: var(--accent-color);
 }
