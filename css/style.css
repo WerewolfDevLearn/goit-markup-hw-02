@@ -1,0 +1,40 @@
+:root {
+  --logo-font: Raleway;
+  --logo-font-size: 26px;
+  --logo-line-height: 31px;
+  --main-font: Roboto;
+  --main-font-size: 14px;
+  --secondary-font-size: 16px;
+  --footer-line-height: 16px;
+  --color-white: #fff;
+  --color-black: #000;
+  --main-text-color: #212121;
+  --secondary-text-color: #757575;
+  --accent-color: #2196f3;
+  --accent-button-color: #188ce8;
+}
+html {
+  font-size: var(--main-font-size);
+  font-family: var(--main-font);
+}
+
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.logo {
+  font-family: var(--logo-font);
+  font-size: var(--logo-font-size);
+  line-height: var(--logp-line-size);
+
+  color: var(--color-black);
+}
+
+.logo-accent {
+  color: var(--accent-color);
+}
+
+.user-nav-list {
+}
